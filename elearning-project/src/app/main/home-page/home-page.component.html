@@ -1,1 +1,44 @@
-<p>home-page works!</p>
+<!-- header area -->
+<div id="homePage">
+    <app-header></app-header>
+    <div class="container-fluid">
+        <div class="row " style="min-height:100vh">
+
+            <div class="col-12 col-lg-5 container mb-5 mt-3  order-2 order-lg-1 order-xl-1">
+                <div class="course text-warning ">
+                    <div class="course-top mx-2 mb-4">
+                        <h1 class="text-white"><i>ReactJS</i></h1>
+                        <div class="d-flex">
+                            <div class="course-raiting mr-5">
+                                <i class="fas fa-star mr-1"></i>
+                                <i class="fas fa-star mr-1"></i>
+                                <i class="fas fa-star mr-1"></i>
+                                <i class="fas fa-star-half-alt mr-1"></i>
+                                <i class="far fa-star "></i>
+
+                                <span class="text-white mx-2"><b>5.0</b></span>
+                                <span class="viewer text-warning">(<span class="text-white">500</span>)</span>
+                            </div>
+                            <b class="course-category"><i>lập trình Front-End</i></b>
+                        </div>
+                        <div class="btn-group my-3" role="group">
+                            <button type="button" class="btn btn-warning">BẮT ĐẦU HỌC</button>
+                            <button type="button" class="btn btn-outline-warning">HỌC NHANH</button>
+                            <button type="button" class="btn btn-danger btn-play"><i
+                                    class="fa fa-play text-light"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <app-course-item *ngFor="let item of listCourseTest" [item]="item" [id]="item.maKhoaHoc">
+                        </app-course-item>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-6 align-self-sm-center order-1 order-lg-2 order-xl-2">
+                <img src="../../../assets/images/Displaysvg.svg" alt="Displaysvg" class="img-fluid bannerHome">
+            </div>
+        </div>
+    </div>
+</div>

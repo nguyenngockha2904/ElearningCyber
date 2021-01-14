@@ -1,0 +1,26 @@
+.navbar {
+  // background-color: rgba(255, 255, 255, 0.727);
+  // box-shadow: 0 10px 30px #92929238;
+  .navbar-brand {
+    img {
+      width: 9rem;
+    }
+  }
+  .navbar-toggler {
+  }
+  .navbar-nav {
+    .nav-item {
+      margin: 0 10px;
+      .nav-link {
+        color: #b3b3b3;
+        letter-spacing: 0.4px;
+      }
+      &:hover,
+      &.active {
+        .nav-link {
+          color: #fbde44;
+        }
+      }
+    }
+  }
+}

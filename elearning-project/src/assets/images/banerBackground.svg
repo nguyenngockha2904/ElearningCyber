@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552.53" height="338.007" viewBox="0 0 552.53 338.007">
+  <g id="banerBackground" transform="translate(-88.66 -50.237)">
+    <g id="banerBackground-2" data-name="banerBackground" opacity="0.8">
+      <g id="Group_3" data-name="Group 3" opacity="0.5">
+        <path id="Path_1" data-name="Path 1" d="M384.89,173.44a145.5,145.5,0,0,1-66.32-28.1c-29.29-22.11-90.59-59.73-149.07-41-80.65,25.85-81,100.62-60,141.24s170,159.56,363.14,140.64C645.46,369.29,679.14,175.43,587,140.35,507,109.92,479.74,187.45,384.89,173.44Z" fill="#ced3e6"/>
+      </g>
+      <g id="Group_4" data-name="Group 4" opacity="0.5">
+        <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="7.49" cy="8.07" rx="7.49" ry="8.07" transform="translate(626.21 136.68)" fill="#ced3e6"/>
+      </g>
+      <path id="Path_2" data-name="Path 2" d="M144.42,91.61a4.87,4.87,0,0,1,5.44,3c1.38,3.74-2.24,7.93-7.1,6h0C138.56,97.6,140.38,92.36,144.42,91.61Z" fill="#ced3e6"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="9.76" cy="9.76" r="9.76" transform="translate(602.086 80.724) rotate(-80.75)" fill="#ced3e6"/>
+      <g id="Group_5" data-name="Group 5" opacity="0.8">
+        <path id="Path_3" data-name="Path 3" d="M174,83.92a9.85,9.85,0,1,1-4.66-5.944A9.87,9.87,0,0,1,174,83.92Z" fill="#ced3e6"/>
+      </g>
+      <path id="Path_4" data-name="Path 4" d="M564.21,377.73a4.85,4.85,0,0,1,5.91,2c2,3.42-.72,8.21-5.85,7.27h0C559.56,384.7,560.38,379.21,564.21,377.73Z" fill="#ced3e6"/>
+      <path id="Path_5" data-name="Path 5" d="M591.86,364.66a9.86,9.86,0,1,1-13.22-4.45,9.86,9.86,0,0,1,13.22,4.45Z" fill="#ced3e6"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="6.01" cy="6.01" r="6.01" transform="translate(588.84 51.7)" fill="#ced3e6"/>
+    </g>
+    <g id="Group_7" data-name="Group 7" opacity="0.8">
+      <path id="Path_6" data-name="Path 6" d="M616.85,166.51c0-53.65-44.68-112.44-100.27-116-1-.07-2-.12-3-.17-79.71-3.71-85.78,93.5-157.89,104.47s-127.19-44.39-213.48-8.28C64.76,179,43.77,361.22,271.47,368.53,453.65,374.38,616.88,326.58,616.85,166.51Z" fill="#ced3e6"/>
+    </g>
+  </g>
+</svg>

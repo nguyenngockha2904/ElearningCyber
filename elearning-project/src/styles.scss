@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #2b3647;
+  --background-box: #e8e8e8;
+  --color-box-hover: #c9c9c9;
+  --default-color: "" #929292;
+  --yellow-color: #fbde44;
+}
+body {
+  letter-spacing: 0.4px;
+}
+button,
+button.btn {
+  transition: all 0.5s ease-out;
+}
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+.dropdown-toggle::after {
+  margin-left: 0.7em;
+  vertical-align: 1px;
+}
+.dropdown-menu {
+  background-color: rgba(240, 241, 247, 0.864);
+  .dropdown-item {
+    color: #2c2c2c;
+  }
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #c9c9c9;
+}
+.slick-initialized .slick-slide {
+  outline: 0px !important;
+}
+@keyframes movebanner {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.avatar-sm {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 0.5px solid #929292;
+}
