@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+
+        <button type="button" id="sidebarCollapse" class="btn btn-warning">
+            <i class="fas fa-align-left"></i>
+
+        </button>
+
+    </div>
+    <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+        <li class="nav-item ">
+            <a class="nav-link" routerLink="/cart"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Tài khoản</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" routerLink="/signin"><i class="fa fa-user mr-1 w-25"></i><span
+                        class="w-75">Đăng
+                        nhập</span></a>
+                <a class="dropdown-item" routerLink="/signup"><i class="fa fa-user-plus mr-1 w-25"></i><span
+                        class="w-75">Đăng ký</span></a>
+            </div>
+        </li>
+
+    </ul>
+</nav>

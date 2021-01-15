@@ -1,44 +1,65 @@
-<!-- header area -->
-<div id="homePage">
-    <app-header></app-header>
-    <div class="container-fluid">
-        <div class="row " style="min-height:100vh">
+<div class="wrapper">
 
-            <div class="col-12 col-lg-5 container mb-5 mt-3  order-2 order-lg-1 order-xl-1">
-                <div class="course text-warning ">
-                    <div class="course-top mx-2 mb-4">
-                        <h1 class="text-white"><i>ReactJS</i></h1>
-                        <div class="d-flex">
-                            <div class="course-raiting mr-5">
-                                <i class="fas fa-star mr-1"></i>
-                                <i class="fas fa-star mr-1"></i>
-                                <i class="fas fa-star mr-1"></i>
-                                <i class="fas fa-star-half-alt mr-1"></i>
-                                <i class="far fa-star "></i>
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header py-0">
 
-                                <span class="text-white mx-2"><b>5.0</b></span>
-                                <span class="viewer text-warning">(<span class="text-white">500</span>)</span>
-                            </div>
-                            <b class="course-category"><i>lập trình Front-End</i></b>
-                        </div>
-                        <div class="btn-group my-3" role="group">
-                            <button type="button" class="btn btn-warning">BẮT ĐẦU HỌC</button>
-                            <button type="button" class="btn btn-outline-warning">HỌC NHANH</button>
-                            <button type="button" class="btn btn-danger btn-play"><i
-                                    class="fa fa-play text-light"></i></button>
-                        </div>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active">
+                <img src="../../../assets/images/logoCyberELearning-dark-version.svg" alt="logo"
+                    class="img-fuild logoImg"></a>
+        </div>
+
+        <ul class="list-unstyled components">
+            <div class="p-3 group-button text-center">
+                <button class="d-block btn btn-danger w-100">Đăng ký</button>
+                <button class="d-block btn btn-outline-warning w-100 my-2">Đăng nhập</button>
+            </div>
+            <div class="my-3"></div>
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" class="dropdown-toggle"><i
+                        class="fas fa-laptop-code"></i><span>Khóa học</span></a>
+                <ul class="collapse list-unstyled py-0" id="homeSubmenu">
+                    <li *ngFor="let item of danhMucList" class="dropdown-li">
+                        <a [routerLink]="'/detail/'+item.maDanhMuc">{{item.tenDanhMuc}}</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a routerLink="/ask-answers"><i class="far fa-question-circle "></i><span>Hỏi
+                        đáp</span></a>
+            </li>
+            <li>
+                <a routerLink="/ask-answers"><i class="far fa-sticky-note "></i><span>Bài
+                        viết</span></a>
+            </li>
+            <li>
+                <a routerLink="/ask-answers"><i class="fas fa-address-book  "></i><span>Liên
+                        hệ</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" class="w-100">
+        <!-- We'll fill this with dummy content -->
+        <app-nav-detail></app-nav-detail>
+        <!-- <div class="container-fluid banner-learn">
+            <div class="row" style="max-height: 300px; height: 300px;">
+                <div class="col-12 col-lg-5 banner-left pt-5">
+                    <img src="../../../assets/images/banner-detail-clip.svg" alt="banner-left">
+                    <div class="banner-content text-dark">
+                        <h1>Chi tiết khóa học</h1>
                     </div>
-
-                    <div class="slider">
-                        <app-course-item *ngFor="let item of listCourseTest" [item]="item" [id]="item.maKhoaHoc">
-                        </app-course-item>
-                    </div>
+                </div>
+                <div class="col-12 col-lg-7 banner-right pt-5 d-flex justify-content-end">
+                    <img src="../../../assets/images/fofo.svg" alt="banner-right">
                 </div>
 
             </div>
-            <div class="col-12 col-lg-6 align-self-sm-center order-1 order-lg-2 order-xl-2">
-                <img src="../../../assets/images/Displaysvg.svg" alt="Displaysvg" class="img-fluid bannerHome">
-            </div>
-        </div>
+        </div> -->
+        <app-banner-home></app-banner-home>
+        <router-outlet></router-outlet>
     </div>
+
 </div>

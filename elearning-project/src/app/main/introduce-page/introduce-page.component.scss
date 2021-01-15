@@ -1,0 +1,24 @@
+#introducePage {
+  background: url(../../../assets/images/banner-class-online.svg) no-repeat 0 0;
+  background-color: #2b3647;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  .btn-group {
+    button {
+      &:first-child {
+        margin-left: 0;
+      }
+      margin: 0 5px;
+      &.btn {
+        border-radius: 5px;
+      }
+      &.btn-play {
+        border-radius: 50%;
+        i {
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

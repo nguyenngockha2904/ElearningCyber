@@ -1,22 +1,114 @@
-#homePage {
-  background: url(../../../assets/images/banner-class-online.svg) no-repeat 0 0;
-  background-color: #2b3647;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-  .btn-group {
-    button {
-      &:first-child {
-        margin-left: 0;
-      }
-      margin: 0 5px;
-      &.btn {
-        border-radius: 5px;
-      }
-      &.btn-play {
-        border-radius: 50%;
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  #sidebar {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100vh;
+    background: #2b3647;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+
+    &.active {
+      margin-left: -200px;
+    }
+    .logoImg {
+      width: 9rem;
+      margin-top: 10px;
+    }
+    .sidebar-header {
+      padding: 20px;
+      background: #2b3647;
+    }
+    ul {
+      padding: 20px 0;
+      border-bottom: 1px solid #2b3647;
+      // transition: none;
+      li {
+        a {
+          // padding: 10px 15px;
+          padding: 10px 1rem;
+          font-size: 1rem;
+          display: block;
+          &:hover {
+            color: #ffc107;
+            background: #36445a;
+          }
+        }
+        &.dropdown-li {
+          padding: 10px;
+          cursor: pointer;
+          a {
+            padding: 5px 1rem;
+            padding-left: 18px;
+            font-size: 0.9rem;
+          }
+          &:hover {
+            color: #ffc107;
+            background: #36445a;
+          }
+        }
         i {
-          line-height: 1;
+          width: 20%;
+        }
+        span {
+          width: 80%;
+        }
+      }
+    }
+    .dropdown-toggle::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  a[data-toggle="collapse"] {
+    position: relative;
+  }
+
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -250px;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+  }
+  #content {
+    min-height: 500vh;
+    position: relative;
+    .banner-learn {
+      background: url(../../../assets/images/banner-detail.svg);
+      background-size: cover;
+      height: 400px;
+      width: 100%;
+      background-size: cover;
+      background-color: #36445a;
+      .banner-left {
+        // background: url(../../../assets/images/banner-class-online.svg)
+        //   no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        img {
+          width: 500px;
+        }
+        .banner-content {
+          position: absolute;
+          top: 71%;
+          left: 40px;
+          transform: translateY(-50%);
+          width: 100%;
+        }
+      }
+      .banner-right {
+        img {
+          width: 500px;
         }
       }
     }

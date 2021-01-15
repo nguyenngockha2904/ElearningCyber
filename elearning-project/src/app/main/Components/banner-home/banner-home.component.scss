@@ -1,0 +1,31 @@
+.banner-learn {
+  background: url(../../../../assets/images/banner-detail.svg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-color: #36445a;
+  .banner-left {
+    // background: url(../../../assets/images/banner-class-online.svg)
+    //   no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    img {
+      width: 500px;
+    }
+    .banner-content {
+      position: absolute;
+      top: 71%;
+      left: 40px;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+  }
+  .banner-right {
+    img {
+      width: 500px;
+    }
+  }
+}
