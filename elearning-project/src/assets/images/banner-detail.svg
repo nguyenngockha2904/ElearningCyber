@@ -6,7 +6,7 @@
   </defs>
   <g id="banner-detail" clip-path="url(#clip-path)" style="isolation: isolate">
     <g id="banner-detail-2" data-name="banner-detail" transform="translate(-428 -1846)">
-      <rect id="Rectangle_234" data-name="Rectangle 234" width="808" height="203" transform="translate(428 1846)" fill="#354358"/>
+      <path id="Path_1402" data-name="Path 1402" d="M0,0H808V203l-28.72,25.456L356.065,286.332,159.951,299.964,149.235,296.8,0,203Z" transform="translate(428 1846)" fill="#354358"/>
       <path id="Path_1316" data-name="Path 1316" d="M-89.636-92.8l-1.77,3.738,1.77,3.738-3.75-.714-2.656,3.024-.547-4.18L-100-89.057l3.412-1.869.547-4.18,2.656,3.024Z" transform="translate(746 1954.113)" fill="#ffe226"/>
       <g id="Group_19" data-name="Group 19" transform="translate(662.606 1851.959) scale(0.391 1)" opacity="0.5">
         <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="7.4" cy="5.94" rx="7.4" ry="5.94" fill="#ffe226"/>

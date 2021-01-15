@@ -38,6 +38,9 @@ export class HomePageComponent implements OnInit, AfterViewInit {
     $(document).ready(function () {
       $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
+        $('#content').toggleClass('contentSide');
+        $('#navbar').toggleClass('navbarSideJS');
+        $('#logoNoSidebar').toggleClass('op');
       });
     });
   }

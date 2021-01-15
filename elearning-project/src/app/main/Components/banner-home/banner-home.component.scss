@@ -1,10 +1,14 @@
 .banner-learn {
-  background: url(../../../../assets/images/banner-detail.svg);
+  background: url(../../../../assets/images/banner-detail.svg) -3px -4px;
   background-size: cover;
   height: 400px;
   width: 100%;
   background-size: cover;
-  background-color: #36445a;
+  // background-color: #36445a43;
+  margin-bottom: 8rem;
+  .title {
+    animation: movebanner 0.6s 1 ease-in-out;
+  }
   .banner-left {
     // background: url(../../../assets/images/banner-class-online.svg)
     //   no-repeat;
@@ -12,6 +16,7 @@
     height: 400px;
     width: 100%;
     position: relative;
+    animation: movebanner 0.5s 1 linear;
     img {
       width: 500px;
     }
@@ -21,11 +26,18 @@
       left: 40px;
       transform: translateY(-50%);
       width: 100%;
+      h1 {
+        width: 300px;
+        margin-left: 1rem;
+      }
     }
   }
   .banner-right {
+    transform: translateY(50px) translateX(-41px);
     img {
       width: 500px;
+
+      animation: movebanner 0.3s 1 linear;
     }
   }
 }

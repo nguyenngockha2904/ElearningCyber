@@ -9,8 +9,11 @@
     background: #2b3647;
     color: #fff;
     transition: all 0.3s;
-    position: relative;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
     &.active {
       margin-left: -200px;
     }
@@ -78,9 +81,15 @@
       margin-left: 0;
     }
   }
+
   #content {
     min-height: 500vh;
     position: relative;
+    margin-left: 200px;
+    transition: all 0.3s;
+    &.contentSide {
+      margin-left: 0px;
+    }
     .banner-learn {
       background: url(../../../assets/images/banner-detail.svg);
       background-size: cover;

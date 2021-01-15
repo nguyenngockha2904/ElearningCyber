@@ -13,6 +13,8 @@ import { BannerHomeComponent } from './Components/banner-home/banner-home.compon
 import { AsAwnPageComponent } from './as-awn-page/as-awn-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { CoursePageComponent } from './course-page/course-page.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 const routes: Routes = [
   {
@@ -46,6 +48,8 @@ const routes: Routes = [
     AsAwnPageComponent,
     BlogPageComponent,
     ContactPageComponent,
+    CoursePageComponent,
+    CourseDetailComponent,
   ],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
