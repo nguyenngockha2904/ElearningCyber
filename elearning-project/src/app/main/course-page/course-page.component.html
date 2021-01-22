@@ -4,4 +4,26 @@
     </div>
 </div>
 
-<p>course-page works!</p>
+<div class="container  course-content">
+    <p class="text-dark text-title"><b>Tất cả khóa học</b></p>
+    <form class="px-0">
+        <div class="w-100 ">
+            <label class="sr-only" for="searchCourse">Username</label>
+            <div class="input-group mb-2">
+                <input type="text" class="form-control" id="searchCourse" placeholder="Tìm kiếm khóa học">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fa fa-search"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <div class="list-courses">
+        <div class="row ">
+            <app-course-item *ngFor="let item of listCourse" [item]="item" class="col-12 col-sm-4 col-lg-3 py-3">
+            </app-course-item>
+        </div>
+    </div>
+
+    <!-- <app-popover-card></app-popover-card> -->
+</div>

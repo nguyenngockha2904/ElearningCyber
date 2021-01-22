@@ -7,6 +7,7 @@
   --color-box-hover: #c9c9c9;
   --default-color: "" #929292;
   --yellow-color: #fbde44;
+  --box-shadow: 0 1px 25px rgba(44, 44, 44, 0.255);
 }
 body {
   letter-spacing: 0.4px;
@@ -66,4 +67,27 @@ a:focus {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.text-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.text-overflow-hidden {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* @extend display-flex; */
+display-flex {
+  display: flex;
+  display: -webkit-flex;
+}
+/* @extend list-type-ulli; */
+list-type-ulli {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

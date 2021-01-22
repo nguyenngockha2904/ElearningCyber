@@ -1,16 +1,28 @@
-<div class="card text-white bg-warning mx-2">
-    <img class="card-img-top img-fluid" [srcset]="item.hinhAnh" alt="course1"
-        src="../../../../assets/images/courses/course3.jpg" style="width: 250px; height: 140px;">
-    <div class="card-body text-dark">
-        <p class="display-5 card-title"><b><i>{{item.tenKhoaHoc}}</i></b></p>
-        <div class="text-mute d-flex align-items-center mt-5 mb-3">
+<div class=" card text-white  mx-2 bg-light ">
+    <div class="card-img-top">
+
+        <img class=" img-fluid" [srcset]="item.hinhAnh" alt="course1"
+            src="../../../../assets/images/courses/course3.jpg" style="width: 100%; height: 140px;">
+    </div>
+
+    <div class="card-body text-dark bg-light">
+        <p class="h20  display-5 card-title text-overflow-hidden text-mute">{{item.tenKhoaHoc}}</p>
+        <small class="h20  text-dark text-mute m-0 text-secondary"><i>{{item.nguoiTao.hoTen}}</i></small>
+        <div class="raiting text-warning">
+            <i class="fas fa-star mr-1"></i>
+            <i class="fas fa-star mr-1"></i>
+            <i class="fas fa-star mr-1"></i>
+            <i class="fas fa-star-half-alt mr-1"></i>
+            <i class="far fa-star "></i>
+        </div>
+        <div class="text-mute d-flex align-items-center my-2">
             <p class="card-text m-0 mr-4"><i class="fa fa-user-friends"></i> {{item.soLuongHocVien}}</p>
             <p class="card-text "><i class="far fa-eye"></i> {{item.luotXem | number}}</p>
         </div>
 
     </div>
-    <div class="card-footer d-flex align-items-center">
-        <img src="../../../../assets/images/avatar.jpg" alt="avatar" class="avatar-sm mr-3 border-dark">
-        <p class="text-dark text-mute m-0"><i>{{item.nguoiTao.hoTen}}</i></p>
+    <div class="card-footer text-light">
+        <p class="text-mute text-secondary text-right"><span class="text-line mr-2">$199.99</span><span
+                class="text-danger display-5 h5"><b class="mr-2">$19.99</b><i class="fas fa-tags"></i></span></p>
     </div>
 </div>

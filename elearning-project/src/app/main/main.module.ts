@@ -15,6 +15,9 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CoursePageComponent } from './course-page/course-page.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { IntroCourseItemComponent } from './Components/intro-course-item/intro-course-item.component';
+import { PopoverCardComponent } from './Components/popover-card/popover-card.component';
+import { GroupControlComponent } from './Components/group-control/group-control.component';
 
 const routes: Routes = [
   {
@@ -50,6 +53,9 @@ const routes: Routes = [
     ContactPageComponent,
     CoursePageComponent,
     CourseDetailComponent,
+    IntroCourseItemComponent,
+    PopoverCardComponent,
+    GroupControlComponent,
   ],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })

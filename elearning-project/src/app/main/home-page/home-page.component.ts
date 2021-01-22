@@ -41,6 +41,7 @@ export class HomePageComponent implements OnInit, AfterViewInit {
         $('#content').toggleClass('contentSide');
         $('#navbar').toggleClass('navbarSideJS');
         $('#logoNoSidebar').toggleClass('op');
+        $('#groupControl').toggleClass('showGroupControl');
       });
     });
   }

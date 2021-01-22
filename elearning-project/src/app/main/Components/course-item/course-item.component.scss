@@ -1,8 +1,40 @@
 .card {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in;
   cursor: pointer;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 25px rgba(44, 44, 44, 0.255);
+
+  .card-img-top {
+    overflow: hidden;
+    height: 140px;
+    img {
+      transition: all 0.2s ease-in;
+    }
+  }
   &:hover {
-    transform: scale(0.97) rotate(1deg);
-    // box-shadow: 0 10px 30px #fbdc44bd;
+    filter: brightness(1.1);
+    box-shadow: 0 10px 50px rgba(44, 44, 44, 0.426);
+    .card-img-top img {
+      transform: scale(1.1) skew(-2deg);
+    }
+  }
+  .card-body {
+    border: none;
+    .card-title {
+      font-size: 0.9em;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    .h20 {
+      height: 20px;
+    }
+  }
+  .card-footer {
+    border: none;
+    .text-line {
+      text-decoration: line-through;
+    }
   }
 }
